@@ -1,0 +1,67 @@
+INTERNCTL(1)                       User Commands                       INTERNCTL(1)
+
+NAME
+       internsctl - custom Linux command for various system operations
+
+SYNOPSIS
+       internsctl [OPTION]... [COMMAND]...
+
+DESCRIPTION
+       internsctl is a custom Linux command that provides various functionalities
+       for system operations.
+
+OPTIONS
+       --version
+              Display command version.
+
+       --help Display this help message.
+
+COMMANDS
+       cpu getinfo
+              Get CPU information similar to lscpu command output.
+
+       memory getinfo
+              Get memory information similar to free command output.
+
+       user create <username>
+              Create a new user with login access and home directory.
+
+       user list
+              List all regular users.
+
+       user list --sudo-only
+              List users with sudo permissions.
+
+       file getinfo [options] <file-name>
+              Get information about a file, including size, permissions, owner,
+              and last modified time. Options available for specific information
+              retrieval (--size, --permissions, --owner, --last-modified).
+
+EXAMPLES
+       To get CPU information:
+              internsctl cpu getinfo
+
+       To create a new user:
+              internsctl user create <username>
+
+       To get file size:
+              internsctl file getinfo --size <file-name>
+
+SEE ALSO
+       lscpu(1), free(1), useradd(8), getent(1), stat(1), ls(1)
+
+AUTHOR
+       Written by Your Name.
+
+REPORTING BUGS
+       Report bugs to: Your Email Address.
+
+COPYRIGHT
+       Copyright © Your Organization. This is free software: you are free to
+       change and redistribute it. There is NO WARRANTY, to the extent permitted
+       by law.
+
+BUGS
+       No known bugs.
+
+INTERNCTL v0.1.0                   March 2024                         INTERNCTL(1)
