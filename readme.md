@@ -69,6 +69,6 @@ internsctl is a custom Linux command that provides various functionalities for s
    ```
    Options available:
    - `--size, -s`: Print size
-   - '--permissions, -p': print file permissions
-   - '--owner, -o': print file owner
-   - '--last-modified, -m' check last modified
+   - `--permissions, -p`: print file permissions
+   - `--owner, -o`: print file owner
+   - `--last-modified, -m` check last modified
